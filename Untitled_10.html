@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRDP Innovation Integration Assessment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        h1,
+        h2,
+        p {
+            margin-bottom: 10px;
+        }
+
+        .radio-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        /* Add spacing between form elements */
+        select,
+        .radio-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>PRDP Innovation Integration Assessment</h1>
+        <p>Welcome to the PRDP Innovation Integration Assessment. This questionnaire is designed to evaluate the integration level of various PRDP innovations within your office. Your responses will help us understand the current status and identify areas for improvement.</p>
+        <p>The objective of this assessment is to gather comprehensive data on the integration and effectiveness of PRDP innovations across different offices. This will support continuous improvement and strategic planning.</p>
+        <p>Your responses will be kept confidential and used solely for the purpose of improving PRDP initiatives. No personally identifiable information will be collected or shared.</p>
+        <p><strong>Instructions:</strong></p>
+        <ul>
+            <li>Select Innovation: Begin by selecting the specific PRDP innovation you are evaluating from the dropdown menu.</li>
+            <li>Assessment: For each category, select the option that best describes your office's current level.</li>
+            <li>Submission: Once you have completed all sections, submit your responses using the 'Submit' button.</li>
+            <li>Feedback: At the end of the assessment, you have the option to provide additional feedback in the designated text box.</li>
+        </ul>
+
+        <form id="assessment-form">
+            <label for="innovation">Select PRDP Innovation:</label>
+            <select id="innovation" name="innovation" required>
+                <option value="">Select an option</option>
+                <option value="VCAs">VCAs for identifying interventions to strengthen value chains for commodities confirmed through eVSAs</option>
+                <option value="eVSA">Enhanced Vulnerability & Suitability Analysis (eVSA)</option>
+                <option value="Operation Planning and Budgeting Guidelines">Operation Planning and Budgeting Guidelines</option>
+                <option value="Operation Manual for Infrastructure Support">Operation Manual for Infrastructure Support</option>
+                <option value="Climate-proofed technical planning parameters or rural infrastructure">Climate-proofed technical planning parameters for rural infrastructure</option>
+                <option value="Rural Road Network Strategic Overlay (IROAD)">Rural Road Network Strategic Overlay (IROAD)</option>
+                <option value="Methodology for Business Planning">Methodology for Business Planning</option>
+                <option value="Geo-mapping">Geo-mapping</option>
+                <option value="Social and Environmental Safeguards (SES)">Social and Environmental Safeguards (SES) Manual</option>
+                <option value="Grievance Redress Mechanism / Citizen Monitoring and Feedback System">Grievance Redress Mechanism / Citizen Monitoring and Feedback System</option>
+            </select>
+
+            <!-- Institutional Integration -->
+            <div class="radio-group">
+                <label for="institutional_integration">Institutional Integration</label><br>
+                <input type="radio" name="institutional_integration" value="0" required> 0: No activities have begun.<br>
+                <input type="radio" name="institutional_integration" value="1" required> 1: Initial workshops conducted, teams formed.<br>
+                <input type="radio" name="institutional_integration" value="2" required> 2: Testing in select departments, integrating goals.<br>
+                <input type="radio" name="institutional_integration" value="3" required> 3: Broad application across departments, coordinated implementation.<br>
+                <input type="radio" name="institutional_integration" value="4" required> 4: Standardized integration into regular operations.<br>
+                <input type="radio" name="institutional_integration" value="5" required> 5: Documenting and sharing best practices and success stories.<br>
+            </div>
+
+            <!-- Capacity Building -->
+            <div class="radio-group">
+                <label for="capacity_building">Capacity Building</label><br>
+                <input type="radio" name="capacity_building" value="0" required> 0: No activities have begun.<br>
+                <input type="radio" name="capacity_building" value="1" required> 1: Early training conducted, champions identified.<br>
+                <input type="radio" name="capacity_building" value="2" required> 2: Advanced training and knowledge-sharing sessions conducted.<br>
+                <input type="radio" name="capacity_building" value="3" required> 3: Comprehensive training provided, peer learning networks established.<br>
+                <input type="radio" name="capacity_building" value="4" required> 4: Ongoing professional development offered, knowledge repository created.<br>
+                <input type="radio" name="capacity_building" value="5" required> 5: Leading training and mentorship programs, facilitating workshops.<br>
+            </div>
+
+            <!-- Policy Support -->
+            <div class="radio-group">
+                <label for="policy_support">Policy Support</label><br>
+                <input type="radio" name="policy_support" value="0" required> 0: No activities have begun.<br>
+                <input type="radio" name="policy_support" value="1" required> 1: Current policies reviewed, initial recommendations drafted.<br>
+                <input type="radio" name="policy_support" value="2" required> 2: Detailed policy drafts formulated, stakeholders engaged.<br>
+                <input type="radio" name="policy_support" value="3" required> 3: Supportive policies implemented, advocating adjustments.<br>
+                <input type="radio" name="policy_support" value="4" required> 4: Fully integrated policies, monitoring implementation.<br>
+                <input type="radio" name="policy_support" value="5" required> 5: Advocating broader policy adoption, engaging in policy dialogue.<br>
+            </div>
+
+            <!-- Knowledge Management -->
+            <div class="radio-group">
+                <label for="knowledge_management">Knowledge Management</label><br>
+                <input type="radio" name="knowledge_management" value="0" required> 0: No activities have begun.<br>
+                <input type="radio" name="knowledge_management" value="1" required> 1: Basic systems established, initial findings documented.<br>
+                <input type="radio" name="knowledge_management" value="2" required> 2: Regular updates to repositories with outcomes and lessons.<br>
+                <input type="radio" name="knowledge_management" value="3" required> 3: Expanded systems to include diverse departmental experiences.<br>
+                <input type="radio" name="knowledge_management" value="4" required> 4: Continuously refining systems, disseminating best practices.<br>
+                <input type="radio" name="knowledge_management" value="5" required> 5: Continuously refining and widely sharing lessons.<br>
+            </div>
+
+            <!-- Innovation Culture -->
+            <div class="radio-group">
+                <label for="innovation_culture">Innovation Culture</label><br>
+                <input type="radio" name="innovation_culture" value="0" required> 0: No activities have begun.<br>
+                <input type="radio" name="innovation_culture" value="1" required> 1: Innovation challenges and brainstorming sessions introduced.<br>
+                <input type="radio" name="innovation_culture" value="2" required> 2: Regular innovation challenges conducted, successful ideas implemented.<br>
+                <input type="radio" name="innovation_culture" value="3" required> 3: Incentives provided for innovative ideas, continuous improvement.<br>
+                <input type="radio" name="innovation_culture" value="4" required> 4: Organization-wide culture of innovation and creativity established.<br>
+                <input type="radio" name="innovation_culture" value="5" required> 5: Organization-wide culture of innovation and creativity fully established.<br>
+            </div>
+
+            <!-- Stakeholder Engagement -->
+            <div class="radio-group">
+                <label for="stakeholder_engagement">Stakeholder Engagement</label><br>
+                <input type="radio" name="stakeholder_engagement" value="0" required> 0: No activities have begun.<br>
+                <input type="radio" name="stakeholder_engagement" value="1" required> 1: Initial meetings with stakeholders held, feedback gathered.<br>
+                <input type="radio" name="stakeholder_engagement" value="2" required> 2: Regular communication with stakeholders, participatory planning.<br>
+                <input type="radio" name="stakeholder_engagement" value="3" required> 3: Collaborative decision-making processes established.<br>
+                <input type="radio" name="stakeholder_engagement" value="4" required> 4: Strong partnerships and stakeholder networks established.<br>
+                <input type="radio" name="stakeholder_engagement" value="5" required> 5: Fully engaged stakeholders, contributing to decision-making.<br>
+            </div>
+
+            <!-- Financial Planning -->
+            <div class="radio-group">
+                <label for="financial_planning">Financial Planning</label><br>
+                <input type="radio" name="financial_planning" value="0" required> 0: No activities have begun.<br>
+                <input type="radio" name="financial_planning" value="1" required> 1: Preliminary budgets developed, funding sources identified.<br>
+                <input type="radio" name="financial_planning" value="2" required> 2: Specific funds allocated, tracking system implemented.<br>
+                <input type="radio" name="financial_planning" value="3" required> 3: Ongoing funding secured, financial models developed.<br>
+                <input type="radio" name="financial_planning" value="4" required> 4: Sustainable financial strategies and long-term plans developed.<br>
+                <input type="radio" name="financial_planning" value="5" required> 5: Demonstrating financial success and cost-effectiveness through planning and analysis.<br>
+            </div>
+
+            <!-- Monitoring and Evaluation -->
+            <div class="radio-group">
+                <label for="monitoring_and_evaluation">Monitoring and Evaluation</label><br>
+                <input type="radio" name="monitoring_and_evaluation" value="0" required> 0: No activities have begun.<br>
+                <input type="radio" name="monitoring_and_evaluation" value="1" required> 1: Basic M&E framework established, initial indicators identified.<br>
+                <input type="radio" name="monitoring_and_evaluation" value="2" required> 2: Enhanced M&E framework with detailed metrics.<br>
+                <input type="radio" name="monitoring_and_evaluation" value="3" required> 3: Advanced analytics implemented, regular evaluations conducted.<br>
+                <input type="radio" name="monitoring_and_evaluation" value="4" required> 4: Comprehensive data collection and reporting capabilities established.<br>
+                <input type="radio" name="monitoring_and_evaluation" value="5" required> 5: Continuously refining M&E processes, publishing findings.<br>
+            </div>
+
+            <!-- Additional Feedback -->
+            <label for="feedback">Additional Feedback (Optional):</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Provide any additional comments or suggestions here..."></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="results" class="result" style="display: none;">
+            <h2>Assessment Results</h2>
+            <p>Thank you for your submission!</p>
+            <p><strong>Selected Innovation:</strong> <span id="result-innovation"></span></p>
+            <p><strong>Breakdown for each Measure:</strong></p>
+            <p>Institutional Integration: <span id="result-institutional_integration"></span></p>
+            <p>Capacity Building: <span id="result-capacity_building"></span></p>
+            <p>Policy Support: <span id="result-policy_support"></span></p>
+            <p>Knowledge Management: <span id="result-knowledge_management"></span></p>
+            <p>Innovation Culture: <span id="result-innovation_culture"></span></p>
+            <p>Stakeholder Engagement: <span id="result-stakeholder_engagement"></span></p>
+            <p>Financial Planning: <span id="result-financial_planning"></span></p>
+            <p>Monitoring and Evaluation: <span id="result-monitoring_and_evaluation"></span></p>
+            <p><strong>Average Score:</strong> <span id="result-average"></span></p>
+            <p><strong>Assessed Level:</strong> <span id="result-level"></span></p>
+            <p><strong>Additional Feedback:</strong> <span id="result-feedback"></span></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("assessment-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Fetch form values
+            const innovation = document.getElementById("innovation").value;
+            const institutionalIntegration = parseInt(document.querySelector('input[name="institutional_integration"]:checked').value);
+            const capacityBuilding = parseInt(document.querySelector('input[name="capacity_building"]:checked').value);
+            const policySupport = parseInt(document.querySelector('input[name="policy_support"]:checked').value);
+            const knowledgeManagement = parseInt(document.querySelector('input[name="knowledge_management"]:checked').value);
+            const innovationCulture = parseInt(document.querySelector('input[name="innovation_culture"]:checked').value);
+            const stakeholderEngagement = parseInt(document.querySelector('input[name="stakeholder_engagement"]:checked').value);
+            const financialPlanning = parseInt(document.querySelector('input[name="financial_planning"]:checked').value);
+            const monitoringAndEvaluation = parseInt(document.querySelector('input[name="monitoring_and_evaluation"]:checked').value);
+            const feedback = document.getElementById("feedback").value;
+
+            // Calculate average score
+            const scores = [institutionalIntegration, capacityBuilding, policySupport, knowledgeManagement, innovationCulture, stakeholderEngagement, financialPlanning, monitoringAndEvaluation];
+            const averageScore = scores.reduce((a, b) => a + b, 0) / scores.length;
+
+            // Determine assessed level based on average score
+            let assessedLevel;
+            if (averageScore === 0) {
+                assessedLevel = "Not Started";
+            } else if (averageScore <= 1.9) {
+                assessedLevel = "Emerging Office";
+            } else if (averageScore <= 2.9) {
+                assessedLevel = "Transforming Office";
+            } else if (averageScore <= 3.9) {
+                assessedLevel = "Integrating Office";
+            } else if (averageScore <= 4.9) {
+                assessedLevel = "Institutionalized Office";
+            } else if (averageScore === 5) {
+                assessedLevel = "Model Office (Optimizing Office)";
+            }
+
+            // Display results
+            document.getElementById("result-innovation").textContent = innovation;
+            document.getElementById("result-institutional_integration").textContent = institutionalIntegration;
+            document.getElementById("result-capacity_building").textContent = capacityBuilding;
+            document.getElementById("result-policy_support").textContent = policySupport;
+            document.getElementById("result-knowledge_management").textContent = knowledgeManagement;
+            document.getElementById("result-innovation_culture").textContent = innovationCulture;
+            document.getElementById("result-stakeholder_engagement").textContent = stakeholderEngagement;
+            document.getElementById("result-financial_planning").textContent = financialPlanning;
+            document.getElementById("result-monitoring_and_evaluation").textContent = monitoringAndEvaluation;
+            document.getElementById("result-average").textContent = averageScore.toFixed(2);
+            document.getElementById("result-level").textContent = assessedLevel + " Office";
+            document.getElementById("result-feedback").textContent = feedback;
+
+            document.getElementById("results").style.display = "block";
+        });
+    </script>
+</body>
+
+</html>
